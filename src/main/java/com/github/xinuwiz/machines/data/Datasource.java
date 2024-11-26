@@ -1,6 +1,7 @@
 package com.github.xinuwiz.machines.data;
 
 import com.github.xinuwiz.machines.data.repository.UserRepository;
+import com.github.xinuwiz.machines.data.service.UserService;
 import com.github.xinuwiz.sql.provider.SessionFactory;
 import com.github.xinuwiz.sql.provider.configuration.Configuration;
 import com.github.xinuwiz.sql.provider.configuration.ConfigurationBuilder;
@@ -13,7 +14,7 @@ import org.bukkit.plugin.Plugin;
 
     private final SessionFactory sessionFactory;
 
-    private final UserRepository userRepository;
+    private final UserService userService;
 
     public Datasource(Plugin plugin) {
 
@@ -27,6 +28,6 @@ import org.bukkit.plugin.Plugin;
 
         this.sessionFactory = SessionFactory.newDefault(configuration);
 
-        this.userRepository = UserRepository.newDefault(sessionFactory);
+        this.userService = UserService.newDefault(sessionFactory);
     }
 }

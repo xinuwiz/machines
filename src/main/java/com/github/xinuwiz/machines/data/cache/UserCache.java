@@ -15,4 +15,7 @@ public interface UserCache {
 
     void remove(User user);
 
+    static UserCache newDefault() {
+        return new DefaultUserCache();
+    }
 }

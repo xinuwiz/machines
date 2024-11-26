@@ -1,16 +1,14 @@
 package com.github.xinuwiz.machines.data.cache;
 
 import com.github.xinuwiz.machines.data.model.User;
-import com.github.xinuwiz.machines.data.repository.UserRepository;
-import org.apache.commons.lang.NotImplementedException;
 
 import java.util.*;
 
-public class CacheUserRepository implements UserCache {
+public class DefaultUserCache implements UserCache {
 
     private final Map<String, User> cache;
 
-    public CacheUserRepository() {
+    public DefaultUserCache() {
         this.cache = new HashMap<>();
     }
 
