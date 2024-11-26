@@ -1,0 +1,16 @@
+[versions]
+lombok = '1.18.36'
+spigot = '1.8.8-R0.1-SNAPSHOT'
+sql-provider = '1.0.1-SNAPSHOT'
+
+[libraries.lombok]
+module = 'org.projectlombok:lombok'
+version.ref = 'lombok'
+
+[libraries.spigot]
+module = 'org.spigotmc:spigot'
+version.ref = 'spigot'
+
+[libraries.sql-provider]
+module = 'com.github.xinuwiz:sql-provider'
+version.ref = 'sql-provider'

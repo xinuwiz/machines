@@ -1,0 +1,17 @@
+buildscript {
+    dependencyResolutionManagement {
+        repositories {
+            mavenCentral()
+            maven { url 'https://maven.elmakers.com/repository' }
+            maven { url 'https://jitpack.io' }
+        }
+    }
+
+    pluginManagement {
+        repositories {
+            mavenCentral()
+        }
+    }
+}
+
+rootProject.name = 'machines'

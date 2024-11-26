@@ -1,0 +1,17 @@
+dependencies {
+    compileOnly libs.spigot
+
+    implementation libs.sql.provider
+
+    compileOnly libs.lombok
+    annotationProcessor libs.lombok
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
